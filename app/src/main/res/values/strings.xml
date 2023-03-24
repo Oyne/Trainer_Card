@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Trainer Card</string>
+    <string name="register_menu_title_text">Trainer Card\nRegistration</string>
+    <string name="register_menu_name_title_text">Name</string>
+    <string name="name_input_helper">Input Name</string>
+    <string name="register_menu_birthday_title_text">Birthday</string>
+    <string name="name_birthday_helper">DD/MM/YY</string>
+    <string name="register_menu_sex_title_text">Sex</string>
+    <string name="register_menu_sex_male_text">Male</string>
+    <string name="register_menu_sex_female_text">Female</string>
+    <string name="register_menu_starter">Starter Pokémon</string>
+    <string name="powered_by">Powered by Litvinov</string>
 </resources>
