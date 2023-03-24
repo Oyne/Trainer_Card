@@ -5,6 +5,7 @@
         <item name="colorOnSurface">@color/dark_theme_fields_color</item>
         <item name="colorPrimary">@color/dark_theme_fields_color</item>
         <item name="android:navigationBarColor">@color/dark_theme_fields_color</item>
+        <item name="colorOnSurfaceVariant">@color/text_hint_color</item>
         <item name="android:textColor">@color/text_color</item>
         <item name="android:colorBackground">@color/dark_theme_background_color</item>
     </style>

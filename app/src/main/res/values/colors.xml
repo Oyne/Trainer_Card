@@ -6,5 +6,6 @@
     <color name="light_theme_background_color">#BA0F30</color>
     <color name="light_theme_fields_color">#F14A6A</color>
 
+    <color name="text_hint_color">#80FFFFFF</color>
     <color name="text_color">#FFFFFF</color>
 </resources>

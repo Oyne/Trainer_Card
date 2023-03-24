@@ -13,13 +13,25 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_title_text"
-        android:textSize="32sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/poweredBy"
+        android:id="@+id/registerMenuNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_name_title_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuTitle" />
+
+    <TextView
+        android:id="@+id/registerMenuPoweredBy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -29,6 +41,55 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/registerMenuLeftHalf"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:rotation="270"
+        app:layout_constraintEnd_toStartOf="@+id/registerMenuTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/half_of_pokeball"
+        app:tint="@color/text_color" />
+
+    <ImageView
+        android:id="@+id/registerMenuRightHalf"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:rotation="90"
+        app:layout_constraintStart_toEndOf="@+id/registerMenuTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/half_of_pokeball"
+        app:tint="@color/text_color" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/text_hint_color"
+        app:boxBackgroundColor="?android:colorPrimary"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="?android:background"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuNameTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:hint="@string/register_menu_name_input_helper"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint_color"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
