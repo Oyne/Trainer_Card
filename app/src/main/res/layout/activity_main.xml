@@ -27,7 +27,6 @@
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_male_text"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/sexOptions"
         app:layout_constraintEnd_toStartOf="@+id/registerMenuSexTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
