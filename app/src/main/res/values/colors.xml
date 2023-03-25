@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="dark_theme_background_color">#0030A8</color>
-    <color name="dark_theme_fields_color">#3768E1</color>
+    <color name="dark_theme_background_color">#001549</color>
+    <color name="dark_theme_fields_color">#2E4C99</color>
+    <color name="dark_theme_bar_color">#000D2C</color>
 
-    <color name="light_theme_background_color">#BA0F30</color>
-    <color name="light_theme_fields_color">#F14A6A</color>
+
+    <color name="light_theme_background_color">#960924</color>
+    <color name="light_theme_fields_color">#CE3F5A</color>
+    <color name="light_theme_bar_color">#5A0515</color>
 
     <color name="text_hint_color">#80FFFFFF</color>
     <color name="text_color">#FFFFFF</color>

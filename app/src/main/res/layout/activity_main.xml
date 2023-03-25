@@ -7,6 +7,30 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/registerMenuMaleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_sex_male_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/registerMenuSexTitle"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
+
+    <TextView
+        android:id="@+id/registerMenuFemaleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_sex_female_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/registerMenuSexTitle"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
+
+    <TextView
         android:id="@+id/registerMenuTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,6 +66,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/registerMenuSexTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_sex_title_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInputLayout" />
+
     <ImageView
         android:id="@+id/registerMenuLeftHalf"
         android:layout_width="65dp"
@@ -65,6 +101,7 @@
         app:tint="@color/text_color" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -80,6 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/registerMenuNameTitle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_bold"
@@ -89,5 +127,37 @@
             android:textColor="@color/text_color"
             android:textColorHint="@color/text_hint_color" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/sexOptions"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle">
+
+        <RadioButton
+            android:id="@+id/sexMale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="85dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:scaleX="1.4"
+            android:scaleY="1.4" />
+
+        <RadioButton
+            android:id="@+id/sexFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:scaleX="1.4"
+            android:scaleY="1.4" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
