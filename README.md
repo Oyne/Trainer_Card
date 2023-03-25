@@ -1,6 +1,14 @@
 # Trainer_Card
 Simple project for my University, where user can create his own Pokémon trainer card
 
+# Design
+I made two themes for registration menu, and trainer cards.
+
+![Figma_wHP4E5hf7z](https://user-images.githubusercontent.com/91478447/227744026-0031cec0-12a8-4cf8-bc43-b9236d03ae44.png)
+
+![Figma_BSfRPJ3sWZ](https://user-images.githubusercontent.com/91478447/227744056-109e4d4a-c5d9-4b22-96ba-e3c30316515b.png)
+
+
 # Registration Menu
 It has 2 themes
 
