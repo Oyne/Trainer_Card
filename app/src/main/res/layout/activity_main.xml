@@ -7,14 +7,28 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/registerMenuBirthdayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_birthday_title_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexOptions" />
+
+    <TextView
         android:id="@+id/registerMenuMaleTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_male_text"
-        android:textSize="24sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sexOptions"
         app:layout_constraintEnd_toStartOf="@+id/registerMenuSexTitle"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
 
@@ -22,11 +36,12 @@
         android:id="@+id/registerMenuFemaleTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_female_text"
-        android:textSize="24sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sexOptions"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toEndOf="@+id/registerMenuSexTitle"
         app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
 
@@ -128,6 +143,35 @@
             android:textColorHint="@color/text_hint_color" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/birthdayInputLayout"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundColor="?android:colorPrimary"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="?android:colorPrimary"
+        app:hintTextColor="@color/text_hint_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuBirthdayTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birthdayInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:hint="@string/register_menu_name_birthday_helper"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_hint_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <RadioGroup
         android:id="@+id/sexOptions"
         android:layout_width="240dp"
@@ -142,22 +186,22 @@
         <RadioButton
             android:id="@+id/sexMale"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
             android:minWidth="0dp"
             android:minHeight="0dp"
-            android:scaleX="1.4"
-            android:scaleY="1.4" />
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
 
         <RadioButton
             android:id="@+id/sexFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="85dp"
+            android:layout_marginStart="88dp"
             android:minWidth="0dp"
             android:minHeight="0dp"
-            android:scaleX="1.4"
-            android:scaleY="1.4" />
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
