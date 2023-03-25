@@ -7,6 +7,19 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/registerMenuStarterPokemonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_starter"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayInputLayout" />
+
+    <TextView
         android:id="@+id/registerMenuBirthdayTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +36,7 @@
         android:id="@+id/registerMenuMaleTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="9dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_male_text"
         android:textSize="18sp"
@@ -35,7 +48,7 @@
         android:id="@+id/registerMenuFemaleTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="9dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_female_text"
         android:textSize="18sp"
@@ -51,7 +64,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_title_text"
-        android:textSize="24sp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -60,7 +73,7 @@
         android:id="@+id/registerMenuNameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_name_title_text"
         android:textSize="24sp"
@@ -84,7 +97,7 @@
         android:id="@+id/registerMenuSexTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_title_text"
         android:textSize="24sp"
@@ -94,10 +107,12 @@
 
     <ImageView
         android:id="@+id/registerMenuLeftHalf"
-        android:layout_width="65dp"
-        android:layout_height="63dp"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:rotation="270"
+        android:scaleType="fitEnd"
         app:layout_constraintEnd_toStartOf="@+id/registerMenuTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/half_of_pokeball"
@@ -105,10 +120,12 @@
 
     <ImageView
         android:id="@+id/registerMenuRightHalf"
-        android:layout_width="65dp"
-        android:layout_height="63dp"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:rotation="90"
+        android:scaleType="fitEnd"
         app:layout_constraintStart_toEndOf="@+id/registerMenuTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/half_of_pokeball"
@@ -118,12 +135,12 @@
         android:id="@+id/nameInputLayout"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:boxBackgroundColor="?android:colorPrimary"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomEnd="7dp"
+        app:boxCornerRadiusBottomStart="7dp"
+        app:boxCornerRadiusTopEnd="7dp"
+        app:boxCornerRadiusTopStart="7dp"
         app:boxStrokeColor="?android:colorPrimary"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,12 +163,12 @@
         android:id="@+id/birthdayInputLayout"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:boxBackgroundColor="?android:colorPrimary"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomEnd="7dp"
+        app:boxCornerRadiusBottomStart="7dp"
+        app:boxCornerRadiusTopEnd="7dp"
+        app:boxCornerRadiusTopStart="7dp"
         app:boxStrokeColor="?android:colorPrimary"
         app:hintTextColor="@color/text_hint_color"
         app:layout_constraintEnd_toEndOf="parent"
@@ -173,10 +190,9 @@
 
     <RadioGroup
         android:id="@+id/sexOptions"
-        android:layout_width="240dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
-        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -202,5 +218,93 @@
             android:scaleX="1.5"
             android:scaleY="1.5" />
     </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/starterOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charmanderImage">
+
+        <RadioButton
+            android:id="@+id/bulbasaurPicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="95dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <RadioButton
+            android:id="@+id/charmanderPicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <RadioButton
+            android:id="@+id/squirtlePicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/bulbasaurImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/charmanderImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuStarterPokemonTitle"
+        app:srcCompat="@drawable/bulbasaur" />
+
+    <ImageView
+        android:id="@+id/charmanderImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuStarterPokemonTitle"
+        app:srcCompat="@drawable/charmander" />
+
+    <ImageView
+        android:id="@+id/squrtleImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/charmanderImage"
+        app:layout_constraintTop_toBottomOf="@+id/registerMenuStarterPokemonTitle"
+        app:srcCompat="@drawable/squirtle" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/register_menu_register_button_text"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerMenuPoweredBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starterOptions" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,4 +10,5 @@
     <string name="register_menu_sex_female_text">Female</string>
     <string name="register_menu_starter">Starter Pokémon</string>
     <string name="powered_by">Powered by Litvinov</string>
+    <string name="register_menu_register_button_text">Register</string>
 </resources>
