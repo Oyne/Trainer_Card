@@ -68,13 +68,12 @@
         android:layout_width="351dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textColorHint="@color/text_hint_color"
         app:boxBackgroundColor="?android:colorPrimary"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:boxStrokeColor="?android:background"
+        app:boxStrokeColor="?android:colorPrimary"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,8 +87,7 @@
             android:singleLine="true"
             android:textAlignment="center"
             android:textColor="@color/text_color"
-            android:textColorHint="@color/text_hint_color"/>
+            android:textColorHint="@color/text_hint_color" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
