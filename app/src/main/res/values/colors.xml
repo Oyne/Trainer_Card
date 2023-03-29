@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="dark_theme_background_color">#001549</color>
-    <color name="dark_theme_fields_color">#2E4C99</color>
-    <color name="dark_theme_bar_color">#000D2C</color>
+    <color name="dark_theme_background_color">#242423</color>
+    <color name="dark_theme_fields_color">#4E4E49</color>
+    <color name="dark_theme_bar_color">#131313</color>
+    <color name="dark_theme_text_color">#FFFFFF</color>
+    <color name="dark_theme_text_hint_color">#80FFFFFF</color>
+
+    <color name="light_theme_background_color">#B5B5B5</color>
+    <color name="light_theme_fields_color">#EBEBEB</color>
+    <color name="light_theme_bar_color">#5A5A5A</color>
+    <color name="light_theme_text_color">#000000</color>
+    <color name="light_theme_text_hint_color">#80000000</color>
+
+    <color name="charmander_theme_background_color">#960924</color>
+    <color name="charmander_theme_fields_color">#CE3F5A</color>
+    <color name="charmander_theme_bar_color">#5A0515</color>
+    <color name="charmander_theme_text_color">#FFD5D5</color>
+    <color name="charmander_theme_text_hint_color">#80FFD5D5</color>
 
 
-    <color name="light_theme_background_color">#960924</color>
-    <color name="light_theme_fields_color">#CE3F5A</color>
-    <color name="light_theme_bar_color">#5A0515</color>
+    <color name="bulbasaur_theme_background_color">#276511</color>
+    <color name="bulbasaur_theme_fields_color">#498634</color>
+    <color name="bulbasaur_theme_bar_color">#1A400D</color>
+    <color name="bulbasaur_theme_text_color">#C7FFCD</color>
+    <color name="bulbasaur_theme_text_hint_color">#80C7FFCD</color>
 
-    <color name="overlay_theme_background_color">#276511</color>
-    <color name="overlay_theme_fields_color">#498634</color>
-    <color name="overlay_theme_bar_color">#1A400D</color>
-
-    <color name="text_hint_color">#80FFFFFF</color>
-    <color name="text_color">#FFFFFF</color>
+    <color name="squirtle_theme_background_color">#001549</color>
+    <color name="squirtle_theme_fields_color">#2E4C99</color>
+    <color name="squirtle_theme_bar_color">#000D2C</color>
+    <color name="squirtle_theme_text_color">#D2DFFF</color>
+    <color name="squirtle_theme_text_hint_color">#80D2DFFF</color>
 </resources>

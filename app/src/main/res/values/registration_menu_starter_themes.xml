@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RegistrationMenuTheme.Bulbasaur" parent="ThemeOverlay.Material3.DynamicColors.Light">
+        <item name="colorPrimaryDark">@color/bulbasaur_theme_bar_color</item>
+        <item name="android:navigationBarColor">@color/bulbasaur_theme_bar_color</item>
+        <item name="colorOnSurface">@color/bulbasaur_theme_fields_color</item>
+        <item name="colorPrimary">@color/bulbasaur_theme_fields_color</item>
+        <item name="colorOnSurfaceVariant">@color/bulbasaur_theme_text_hint_color</item>
+        <item name="android:textColor">@color/bulbasaur_theme_text_color</item>
+        <item name="android:colorBackground">@color/bulbasaur_theme_background_color</item>
+    </style>
+
+    <style name="RegistrationMenuTheme.Charmander" parent="ThemeOverlay.Material3.DynamicColors.Light">
+        <item name="colorPrimaryDark">@color/charmander_theme_bar_color</item>
+        <item name="android:navigationBarColor">@color/charmander_theme_bar_color</item>
+        <item name="colorOnSurface">@color/charmander_theme_fields_color</item>
+        <item name="colorPrimary">@color/charmander_theme_fields_color</item>
+        <item name="colorOnSurfaceVariant">@color/charmander_theme_text_hint_color</item>
+        <item name="android:textColor">@color/charmander_theme_text_color</item>
+        <item name="android:colorBackground">@color/charmander_theme_background_color</item>
+    </style>
+
+    <style name="RegistrationMenuTheme.Squirtle" parent="ThemeOverlay.Material3.DynamicColors.Light">
+        <item name="colorPrimaryDark">@color/squirtle_theme_bar_color</item>
+        <item name="android:navigationBarColor">@color/squirtle_theme_bar_color</item>
+        <item name="colorOnSurface">@color/squirtle_theme_fields_color</item>
+        <item name="colorPrimary">@color/squirtle_theme_fields_color</item>
+        <item name="colorOnSurfaceVariant">@color/squirtle_theme_text_hint_color</item>
+        <item name="android:textColor">@color/squirtle_theme_text_color</item>
+        <item name="android:colorBackground">@color/squirtle_theme_background_color</item>
+    </style>
+</resources>

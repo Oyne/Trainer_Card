@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/registerMenuStarterPokemonTitle"
+        android:id="@+id/starter_pokemon_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/birthdayInputLayout" />
 
     <TextView
-        android:id="@+id/registerMenuBirthdayTitle"
+        android:id="@+id/register_menu_birthday_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -30,35 +30,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sexOptions" />
+        app:layout_constraintTop_toBottomOf="@+id/sex_options" />
 
     <TextView
-        android:id="@+id/registerMenuMaleTitle"
+        android:id="@+id/male_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_male_text"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/registerMenuSexTitle"
+        app:layout_constraintEnd_toStartOf="@+id/register_menu_sex_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/register_menu_sex_title" />
 
     <TextView
-        android:id="@+id/registerMenuFemaleTitle"
+        android:id="@+id/female_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="9dp"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_sex_female_text"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/sexOptions"
+        app:layout_constraintBottom_toTopOf="@+id/sex_options"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/registerMenuSexTitle"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle" />
+        app:layout_constraintStart_toEndOf="@+id/register_menu_sex_title"
+        app:layout_constraintTop_toBottomOf="@+id/register_menu_sex_title" />
 
     <TextView
-        android:id="@+id/registerMenuTitle"
+        android:id="@+id/register_menu_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/registerMenuNameTitle"
+        android:id="@+id/name_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -79,10 +79,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/register_menu_title" />
 
     <TextView
-        android:id="@+id/registerMenuPoweredBy"
+        android:id="@+id/powered_by"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -94,7 +94,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/registerMenuSexTitle"
+        android:id="@+id/register_menu_sex_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -106,30 +106,30 @@
         app:layout_constraintTop_toBottomOf="@+id/nameInputLayout" />
 
     <ImageView
-        android:id="@+id/registerMenuLeftHalf"
+        android:id="@+id/register_menu_left_half"
         android:layout_width="82dp"
         android:layout_height="84dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:rotation="270"
         android:scaleType="fitEnd"
-        app:layout_constraintEnd_toStartOf="@+id/registerMenuTitle"
+        app:layout_constraintEnd_toStartOf="@+id/register_menu_title"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/half_of_pokeball"
-        app:tint="@color/text_color" />
+        app:tint="?android:textColor" />
 
     <ImageView
-        android:id="@+id/registerMenuRightHalf"
+        android:id="@+id/register_menu_right_half"
         android:layout_width="82dp"
         android:layout_height="84dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:rotation="90"
         android:scaleType="fitEnd"
-        app:layout_constraintStart_toEndOf="@+id/registerMenuTitle"
+        app:layout_constraintStart_toEndOf="@+id/register_menu_title"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/half_of_pokeball"
-        app:tint="@color/text_color" />
+        app:tint="?android:textColor" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nameInputLayout"
@@ -145,18 +145,18 @@
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuNameTitle">
+        app:layout_constraintTop_toBottomOf="@+id/name_title">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameInput"
+            android:id="@+id/name_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_bold"
             android:hint="@string/register_menu_name_input_helper"
             android:singleLine="true"
             android:textAlignment="center"
-            android:textColor="@color/text_color"
-            android:textColorHint="@color/text_hint_color" />
+            android:textColor="?android:textColor"
+            android:textColorHint="?colorOnSurfaceVariant" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -170,13 +170,13 @@
         app:boxCornerRadiusTopEnd="7dp"
         app:boxCornerRadiusTopStart="7dp"
         app:boxStrokeColor="?android:colorPrimary"
-        app:hintTextColor="@color/text_hint_color"
+        app:hintTextColor="?colorOnSurfaceVariant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuBirthdayTitle">
+        app:layout_constraintTop_toBottomOf="@+id/register_menu_birthday_title">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/birthdayInput"
+            android:id="@+id/birthday_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_bold"
@@ -184,22 +184,22 @@
             android:inputType="date"
             android:singleLine="true"
             android:textAlignment="center"
-            android:textColor="@color/text_color"
-            android:textColorHint="@color/text_hint_color" />
+            android:textColor="?android:textColor"
+           />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
-        android:id="@+id/sexOptions"
+        android:id="@+id/sex_options"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuSexTitle">
+        app:layout_constraintTop_toBottomOf="@+id/register_menu_sex_title">
 
         <RadioButton
-            android:id="@+id/sexMale"
+            android:id="@+id/sex_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="88dp"
@@ -209,7 +209,7 @@
             android:scaleY="1.5" />
 
         <RadioButton
-            android:id="@+id/sexFemale"
+            android:id="@+id/sex_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="88dp"
@@ -217,6 +217,7 @@
             android:minHeight="0dp"
             android:scaleX="1.5"
             android:scaleY="1.5" />
+
     </RadioGroup>
 
     <RadioGroup
@@ -228,10 +229,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/charmanderImage">
+        app:layout_constraintTop_toBottomOf="@+id/charmander_image">
 
         <RadioButton
-            android:id="@+id/bulbasaurPicked"
+            android:id="@+id/bulbasaur_picked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="95dp"
@@ -241,7 +242,7 @@
             android:scaleY="1.5" />
 
         <RadioButton
-            android:id="@+id/charmanderPicked"
+            android:id="@+id/charmander_picked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="0dp"
@@ -250,7 +251,7 @@
             android:scaleY="1.5" />
 
         <RadioButton
-            android:id="@+id/squirtlePicked"
+            android:id="@+id/squirtle_picked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="95dp"
@@ -261,48 +262,48 @@
     </RadioGroup>
 
     <ImageView
-        android:id="@+id/bulbasaurImage"
+        android:id="@+id/bulbasaur_image"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/charmanderImage"
+        app:layout_constraintEnd_toStartOf="@+id/charmander_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuStarterPokemonTitle"
+        app:layout_constraintTop_toBottomOf="@+id/starter_pokemon_title"
         app:srcCompat="@drawable/bulbasaur" />
 
     <ImageView
-        android:id="@+id/charmanderImage"
+        android:id="@+id/charmander_image"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuStarterPokemonTitle"
+        app:layout_constraintTop_toBottomOf="@+id/starter_pokemon_title"
         app:srcCompat="@drawable/charmander" />
 
     <ImageView
-        android:id="@+id/squrtleImage"
+        android:id="@+id/squrtle_image"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/charmanderImage"
-        app:layout_constraintTop_toBottomOf="@+id/registerMenuStarterPokemonTitle"
+        app:layout_constraintStart_toEndOf="@+id/charmander_image"
+        app:layout_constraintTop_toBottomOf="@+id/starter_pokemon_title"
         app:srcCompat="@drawable/squirtle" />
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/register_button"
         android:layout_width="223dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:text="@string/register_menu_register_button_text"
-        android:textColor="@color/text_color"
+        android:textColor="?android:textColor"
         android:textSize="24sp"
         app:cornerRadius="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/registerMenuPoweredBy"
+        app:layout_constraintBottom_toTopOf="@+id/powered_by"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starterOptions" />
