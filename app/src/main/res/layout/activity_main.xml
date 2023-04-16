@@ -156,7 +156,8 @@
             android:singleLine="true"
             android:textAlignment="center"
             android:textColor="?android:textColor"
-            android:textColorHint="?colorOnSurfaceVariant" />
+            android:textColorHint="?colorOnSurfaceVariant"
+            android:drawableRight="@drawable/badge_icon" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -185,7 +186,8 @@
             android:singleLine="true"
             android:textAlignment="center"
             android:textColor="?android:textColor"
-           />
+            android:drawableRight="@drawable/caldendar_icon" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
@@ -307,5 +309,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starterOptions" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/sex_options"
+        app:layout_constraintStart_toEndOf="@+id/sex_options"
+        app:layout_constraintTop_toTopOf="@+id/sex_options"
+        app:srcCompat="@drawable/female_icon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/sex_options"
+        app:layout_constraintEnd_toStartOf="@+id/sex_options"
+        app:layout_constraintTop_toTopOf="@+id/sex_options"
+        app:srcCompat="@drawable/male_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
