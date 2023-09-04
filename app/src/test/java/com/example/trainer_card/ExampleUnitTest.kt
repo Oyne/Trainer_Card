@@ -1,4 +1,4 @@
-package com.example.trainercard
+package com.example.trainer_card
 
 import org.junit.Test
 

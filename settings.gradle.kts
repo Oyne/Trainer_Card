@@ -12,5 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Trainer Card"
+
+rootProject.name = "Trainer_Card"
 include(":app")
